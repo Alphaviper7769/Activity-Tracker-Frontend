@@ -1,6 +1,6 @@
 // Switcher.js
 import React from "react";
-import { Route, HashRouter, Routes } from "react-router-dom";
+import { Route, HashRouter, Routes, BrowserRouter } from "react-router-dom";
 import Dashboard from "./DashBoard/DashBoard";
 import BlacklistComponent from "./BlackList/BlackList";
 import Login from "./Login";
@@ -10,7 +10,7 @@ import NavBar from "./NavBar/NavBar";
 
 const Switcher = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
 
@@ -27,7 +27,7 @@ const Switcher = () => {
         <Route path="/notification" element={<Notification />} />
         {/* Add more routes here for other components */}
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
