@@ -58,9 +58,9 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'rec
 function BarGraphComponent({ data }) {
   // Sample data if no data is provided
   const sampleData = [
-    { label: 'Category 1', value: 30 },
-    { label: 'Category 2', value: 20 },
-    { label: 'Category 3', value: 50 },
+    { label: 'Category 1', value: 30, color: '#8884d8' },
+    { label: 'Category 2', value: 20, color: '#82ca9d' },
+    { label: 'Category 3', value: 50, color: '#ffc658' },
   ];
 
   const chartData = data ? data : sampleData;
